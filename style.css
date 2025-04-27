@@ -1,0 +1,328 @@
+
+        * {
+            outline: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 50%, #0f4c75 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #0f4c75;
+            margin: 30px 0 20px;
+            border-bottom: 3px solid #3282b8;
+            padding-bottom: 8px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #1a5276;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+
+        .periodic-table {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow-x: auto;
+        }
+
+        .table-container {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 5px;
+            margin-top: 30px;
+            min-width: 1000px;
+        }
+
+        .element {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+            position: relative;
+            min-height: 80px;
+        }
+
+        .element:hover {
+            transform: scale(1.05);
+            z-index: 10;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .element .number {
+            font-size: 0.7rem;
+            color: #666;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+
+        .element .symbol {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .element .name {
+            font-size: 0.7rem;
+            margin-top: 5px;
+            word-break: break-word;
+        }
+
+        .element .latin {
+            font-size: 0.6rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Element category colors */
+        .alkali { background-color: #ff9aa2; }
+        .alkaline-earth { background-color: #ffb7b2; }
+        .transition { background-color: #ffdac1; }
+        .post-transition { background-color: #e2f0cb; }
+        .metalloid { background-color: #b5ead7; }
+        .nonmetal { background-color: #c7ceea; }
+        .halogen { background-color: #a2d2ff; }
+        .noble-gas { background-color: #cdb4db; }
+        .lanthanide { background-color: #f8c8dc; }
+        .actinide { background-color: #f4a261; }
+        .unknown { background-color: #e9ecef; }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .element-details {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: none;
+        }
+
+        .element-details.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .detail-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .detail-symbol {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0f4c75;
+            margin-right: 20px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .detail-name {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .detail-number {
+            font-size: 1.2rem;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .detail-properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .property {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .property-title {
+            font-weight: bold;
+            color: #0f4c75;
+            margin-bottom: 5px;
+        }
+
+        .reactions {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .reaction {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .reaction:last-child {
+            border-bottom: none;
+        }
+
+        .reaction-equation {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .facts-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .fact {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .fact:before {
+            content: "•";
+            color: #3282b8;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .combinations {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .combination {
+            margin-bottom: 15px;
+        }
+
+        .search-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        #element-search {
+            padding: 10px 15px;
+            width: 300px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #0f4c75;
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .creator {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .table-container {
+                gap: 3px;
+            }
+            
+            .element {
+                padding: 5px 2px;
+                min-height: 60px;
+            }
+            
+            .element .symbol {
+                font-size: 1rem;
+            }
+            
+            .element .name {
+                font-size: 0.6rem;
+            }
+        }
+    

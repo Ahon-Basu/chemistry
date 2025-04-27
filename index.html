@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পর্যায় সারণী - রাসায়নিক বিক্রিয়া ও মৌলিক তথ্য</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>রসায়ন ও পর্যায় সারণী </h1>
+            <p>মৌল, রাসায়নিক বিক্রিয়া ও রসায়নের মজার তথ্য</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="periodic-table">
+            <h2>পর্যায় সারণীর সকল মৌল</h2>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color alkali"></div>
+                    <span>ক্ষার ধাতু</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color alkaline-earth"></div>
+                    <span>ক্ষারীয় মৃত্তিকা ধাতু</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color transition"></div>
+                    <span>সংক্রমণ ধাতু</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color post-transition"></div>
+                    <span>উত্তর-সংক্রমণ ধাতু</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color metalloid"></div>
+                    <span>ধাতুকল্প</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color nonmetal"></div>
+                    <span>অধাতু</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color halogen"></div>
+                    <span>হ্যালোজেন</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color noble-gas"></div>
+                    <span>নিষ্ক্রিয় গ্যাস</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color lanthanide"></div>
+                    <span>ল্যান্থানাইড</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color actinide"></div>
+                    <span>অ্যাক্টিনাইড</span>
+                </div>
+            </div>
+            
+            
+            <div class="table-container" id="periodic-table">
+                <!-- Elements will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section class="element-details" id="element-details">
+            <div class="detail-header">
+                <div class="detail-symbol" id="detail-symbol"></div>
+                <div>
+                    <span class="detail-name" id="detail-name"></span>
+                    <span class="detail-number" id="detail-number"></span>
+                </div>
+            </div>
+            
+            <div class="detail-properties" id="detail-properties">
+                <!-- Properties will be added by JavaScript -->
+            </div>
+        </section>
+
+        <section class="reactions">
+            <h2>গুরুত্বপূর্ণ রাসায়নিক বিক্রিয়া (১০-২০টি)</h2>
+            
+            <div class="reaction">
+                <h3>দহন বিক্রিয়া</h3>
+                <p>জ্বালানীর অক্সিজেনের সাথে বিক্রিয়া করে তাপ ও আলো উৎপন্ন করে:</p>
+                <div class="reaction-equation">CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O + তাপ</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>ফটোসিনথেসিস</h3>
+                <p>উদ্ভিদ সূর্যালোকের উপস্থিতিতে কার্বন ডাইঅক্সাইড ও পানি থেকে গ্লুকোজ তৈরি করে:</p>
+                <div class="reaction-equation">6CO<sub>2</sub> + 6H<sub>2</sub>O + আলো → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub></div>
+            </div>
+            
+            <div class="reaction">
+                <h3>শ্বসন</h3>
+                <p>জীবকোষে গ্লুকোজ ভেঙে শক্তি উৎপন্ন করে:</p>
+                <div class="reaction-equation">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> → 6CO<sub>2</sub> + 6H<sub>2</sub>O + শক্তি</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>অ্যাসিড-বেস বিক্রিয়া</h3>
+                <p>হাইড্রোক্লোরিক অ্যাসিড ও সোডিয়াম হাইড্রোক্সাইডের বিক্রিয়া:</p>
+                <div class="reaction-equation">HCl + NaOH → NaCl + H<sub>2</sub>O</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>ধাতুর সাথে অ্যাসিডের বিক্রিয়া</h3>
+                <p>জিঙ্কের সাথে সালফিউরিক অ্যাসিডের বিক্রিয়া:</p>
+                <div class="reaction-equation">Zn + H<sub>2</sub>SO<sub>4</sub> → ZnSO<sub>4</sub> + H<sub>2</sub>↑</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>প্রতিস্থাপন বিক্রিয়া</h3>
+                <p>লোহার সাথে কপার সালফেটের বিক্রিয়া:</p>
+                <div class="reaction-equation">Fe + CuSO<sub>4</sub> → FeSO<sub>4</sub> + Cu</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>বিযোজন বিক্রিয়া</h3>
+                <p>পটাসিয়াম ক্লোরেটের তাপীয় বিযোজন:</p>
+                <div class="reaction-equation">2KClO<sub>3</sub> → 2KCl + 3O<sub>2</sub>↑</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>সংযোজন বিক্রিয়া</h3>
+                <p>হাইড্রোজেন ও ক্লোরিনের সংযোজন:</p>
+                <div class="reaction-equation">H<sub>2</sub> + Cl<sub>2</sub> → 2HCl</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>নিরুদন বিক্রিয়া</h3>
+                <p>ক্যালসিয়াম কার্বনেটের তাপীয় বিযোজন:</p>
+                <div class="reaction-equation">CaCO<sub>3</sub> → CaO + CO<sub>2</sub>↑</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>অবক্ষেপণ বিক্রিয়া</h3>
+                <p>সিলভার নাইট্রেট ও সোডিয়াম ক্লোরাইডের বিক্রিয়া:</p>
+                <div class="reaction-equation">AgNO<sub>3</sub> + NaCl → AgCl↓ + NaNO<sub>3</sub></div>
+            </div>
+            
+            <div class="reaction">
+                <h3>জারণ-বিজারণ</h3>
+                <p>আয়রনের মরিচা ধরা:</p>
+                <div class="reaction-equation">4Fe + 3O<sub>2</sub> + 2xH<sub>2</sub>O → 2Fe<sub>2</sub>O<sub>3</sub>.xH<sub>2</sub>O</div>
+            </div>
+            
+            <div class="reaction">
+                <h3>ইথানলের দহন</h3>
+                <p>ইথানলের অক্সিজেনের সাথে বিক্রিয়া:</p>
+                <div class="reaction-equation">C<sub>2</sub>H<sub>5</sub>OH + 3O<sub>2</sub> → 2CO<sub>2</sub> + 3H<sub>2</sub>O</div>
+            </div>
+        </section>
+
+        <section class="combinations">
+            <h2>বিভিন্ন মৌলের জোড় বা যৌগ</h2>
+            
+            <div class="combination">
+                <h3>জল (H<sub>2</sub>O)</h3>
+                <p>হাইড্রোজেন ও অক্সিজেনের যৌগ যা জীবনের জন্য অপরিহার্য।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>সোডিয়াম ক্লোরাইড (NaCl)</h3>
+                <p>সোডিয়াম ও ক্লোরিনের যৌগ যা সাধারণ লবণ নামে পরিচিত।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>কার্বন ডাইঅক্সাইড (CO<sub>2</sub>)</h3>
+                <p>কার্বন ও অক্সিজেনের যৌগ যা গ্রিনহাউস গ্যাস হিসেবে কাজ করে।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>অ্যামোনিয়া (NH<sub>3</sub>)</h3>
+                <p>নাইট্রোজেন ও হাইড্রোজেনের যৌগ যা সার ও পরিষ্কারক হিসেবে ব্যবহৃত হয়।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>মিথেন (CH<sub>4</sub>)</h3>
+                <p>কার্বন ও হাইড্রোজেনের যৌগ যা প্রাকৃতিক গ্যাসের প্রধান উপাদান।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>সালফিউরিক অ্যাসিড (H<sub>2</sub>SO<sub>4</sub>)</h3>
+                <p>হাইড্রোজেন, সালফার ও অক্সিজেনের যৌগ যা শিল্পে ব্যাপকভাবে ব্যবহৃত হয়।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>ক্যালসিয়াম কার্বনেট (CaCO<sub>3</sub>)</h3>
+                <p>ক্যালসিয়াম, কার্বন ও অক্সিজেনের যৌগ যা চুনাপাথরে পাওয়া যায়।</p>
+            </div>
+            
+            <div class="combination">
+                <h3>গ্লুকোজ (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>)</h3>
+                <p>কার্বন, হাইড্রোজেন ও অক্সিজেনের যৌগ যা জীবদেহের শক্তির প্রধান উৎস।</p>
+            </div>
+        </section>
+
+        <section class="facts-container">
+            <h2>রসায়নের ৫০টি মজার তথ্য</h2>
+            
+            <div class="fact">পর্যায় সারণীর একমাত্র তরল ধাতু হল পারদ (Hg)।</div>
+            <div class="fact">হাইড্রোজেন হল মহাবিশ্বের সবচেয়ে প্রচুর মৌল।</div>
+            <div class="fact">সোনা (Au) এত নমনীয় যে এক গ্রাম সোনা দিয়ে ১ বর্গমিটার পাত তৈরি করা যায়।</div>
+            <div class="fact">হীরা ও গ্রাফাইট উভয়ই শুধুমাত্র কার্বন দিয়ে গঠিত।</div>
+            <div class="fact">মানবদেহে অক্সিজেনের পরিমাণ সবচেয়ে বেশি (প্রায় 65%)।</div>
+            <div class="fact">সিজিয়াম (Cs) এবং ফ্রান্সিয়াম (Fr) হল সবচেয়ে বেশি বিক্রিয়াশীল ধাতু।</div>
+            <div class="fact">টাংস্টেন (W) এর গলনাঙ্ক সবচেয়ে বেশি (3422°C)।</div>
+            <div class="fact">হিলিয়াম (He) হল একমাত্র মৌল যার কঠিন অবস্থা তৈরি করতে চাপ প্রয়োজন।</div>
+            <div class="fact">অ্যাসকরবিক অ্যাসিড (ভিটামিন সি) একটি জৈব যৌগ যা লেবুতে পাওয়া যায়।</div>
+            <div class="fact">প্রাকৃতিকভাবে পাওয়া সবচেয়ে ভারী মৌল হল ইউরেনিয়াম (U)।</div>
+            <div class="fact">সবচেয়ে হালকা গ্যাস হল হাইড্রোজেন (H<sub>2</sub>)।</div>
+            <div class="fact">কপার (Cu) এবং সোনা (Au) হল একমাত্র ধাতব মৌল যেগুলো প্রাকৃতিকভাবে রঙিন।</div>
+            <div class="fact">ফ্লোরিন (F) হল সবচেয়ে বেশি তড়িৎঋণাত্মক মৌল।</div>
+            <div class="fact">জল (H<sub>2</sub>O) একমাত্র পদার্থ যা প্রাকৃতিকভাবে তিনটি অবস্থাতেই (কঠিন, তরল, গ্যাস) পাওয়া যায়।</div>
+            <div class="fact">টেফলন পণ্যগুলো তৈরি হয় পলিটেট্রাফ্লুরোইথিলিন (PTFE) নামক প্লাস্টিক থেকে।</div>
+            <div class="fact">প্রাকৃতিক রাবারের প্রধান উপাদান হল পলিআইসোপ্রিন, একটি জৈব যৌগ।</div>
+            <div class="fact">একটি পরমাণুর 99.9% ভর নিউক্লিয়াসে কেন্দ্রীভূত।</div>
+            <div class="fact">এক চা চামচ নিউট্রন তারের ওজন প্রায় 6 বিলিয়ন টন হবে।</div>
+            <div class="fact">ক্যালসিয়াম (Ca) আমাদের হাড় ও দাঁতের প্রধান উপাদান।</div>
+            <div class="fact">অক্সিজেন (O) ছাড়া মানুষ মাত্র কয়েক মিনিট বাঁচতে পারে।</div>
+            <div class="fact">কার্বন (C) হল একমাত্র মৌল যার নিজস্ব একটি সম্পূর্ণ রসায়ন শাখা আছে (জৈব রসায়ন)।</div>
+            <div class="fact">সবচেয়ে বেশি সংখ্যক যৌগ তৈরি করে কার্বন (C)।</div>
+            <div class="fact">সবচেয়ে কম সক্রিয় মৌল হল নিষ্ক্রিয় গ্যাসগুলো (হিলিয়াম, নিয়ন ইত্যাদি)।</div>
+            <div class="fact">পৃথিবীর কেন্দ্রে প্রধানত লোহা (Fe) ও নিকেল (Ni) আছে।</div>
+            <div class="fact">সবচেয়ে বেশি বিদ্যুৎ পরিবাহী ধাতু হল রূপা (Ag)।</div>
+            <div class="fact">সবচেয়ে কম ঘনত্বের ধাতু হল লিথিয়াম (Li)।</div>
+            <div class="fact">ইলেকট্রন প্রথম আবিষ্কৃত হয় 1897 সালে জে.জে. থমসন দ্বারা।</div>
+            <div class="fact">প্রথম কৃত্রিমভাবে তৈরি মৌল হল টেকনেসিয়াম (Tc)।</div>
+            <div class="fact">একটি হীরা জ্বালালে তা সম্পূর্ণভাবে কার্বন ডাইঅক্সাইডে পরিণত হয়।</div>
+            <div class="fact">মানবদেহে প্রায় 60টি বিভিন্ন মৌল পাওয়া যায়।</div>
+            <div class="fact">সবচেয়ে ভারী প্রাকৃতিক গ্যাস হল রেডন (Rn)।</div>
+            <div class="fact">সবচেয়ে বেশি তড়িৎঋণাত্মক মৌল হল ফ্লোরিন (F)।</div>
+            <div class="fact">সবচেয়ে কম তড়িৎঋণাত্মক মৌল হল ফ্রান্সিয়াম (Fr)।</div>
+            <div class="fact">সবচেয়ে বেশি তাপ পরিবাহী ধাতু হল রূপা (Ag)।</div>
+            <div class="fact">সবচেয়ে কম তাপ পরিবাহী ধাতু হল পারদ (Hg)।</div>
+            <div class="fact">সবচেয়ে বেশি প্রতিফলক ধাতু হল রূপা (Ag)।</div>
+            <div class="fact">সবচেয়ে কম প্রতিফলক ধাতু হল পটাসিয়াম (K)।</div>
+            <div class="fact">সবচেয়ে বেশি ইলেকট্রন আসক্তি আছে ক্লোরিনের (Cl)।</div>
+            <div class="fact">সবচেয়ে কম ইলেকট্রন আসক্তি আছে নিষ্ক্রিয় গ্যাসগুলোর।</div>
+            <div class="fact">সবচেয়ে বেশি আয়নিকরণ শক্তি আছে হিলিয়ামের (He)।</div>
+            <div class="fact">সবচেয়ে কম আয়নিকরণ শক্তি আছে ফ্রান্সিয়ামের (Fr)।</div>
+            <div class="fact">সবচেয়ে বেশি তেজস্ক্রিয় প্রাকৃতিক মৌল হল ইউরেনিয়াম (U)।</div>
+            <div class="fact">সবচেয়ে কম তেজস্ক্রিয় প্রাকৃতিক মৌল হল বিসমাথ (Bi)।</div>
+            <div class="fact">সবচেয়ে বেশি তেজস্ক্রিয় কৃত্রিম মৌল হল ফ্রান্সিয়াম (Fr)।</div>
+            <div class="fact">সবচেয়ে কম তেজস্ক্রিয় কৃত্রিম মৌল হল টেকনেসিয়াম (Tc)।</div>
+            <div class="fact">সবচেয়ে বেশি স্থায়ী আইসোটোপ আছে টিনের (Sn) - 10টি।</div>
+            <div class="fact">সবচেয়ে কম স্থায়ী আইসোটোপ আছে হাইড্রোজেনের (H) - 1টি।</div>
+            <div class="fact">সবচেয়ে বেশি অস্থায়ী আইসোটোপ আছে ইউরেনিয়ামের (U)।</div>
+            <div class="fact">সবচেয়ে কম অস্থায়ী আইসোটোপ আছে হাইড্রোজেনের (H)।</div>
+            <div class="fact">সবচেয়ে বেশি যৌগ তৈরি করে কার্বন (C)।</div>
+            <div class="fact">সবচেয়ে কম যৌগ তৈরি করে নিষ্ক্রিয় গ্যাসগুলো।</div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© ২০২৫ রসায়ন ও পর্যায় সারণী - সকল অধিকার সংরক্ষিত</p>
+            <p class="creator">এই ওয়েবসাইটটি তৈরি করেছেন: অহন বসু</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
